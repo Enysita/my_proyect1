@@ -4,57 +4,243 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/brave.css">
+    <link rel="stylesheet" href="../style/brave.css">
+    <link rel="stylesheet" href="../views/listenme.html">
+    <link rel="stylesheet" href="../style/listenme.css">
+    <link rel="stylesheet" href="../my_proyect/views/example.html">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>BRAVE webpage</title>
-    
 </head>
 <body>
+    <button id="back-to-top-btn">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-up" class="svg-inline--fa fa-circle-arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM382.6 254.6c-12.5 12.5-32.75 12.5-45.25 0L288 205.3V384c0 17.69-14.33 32-32 32s-32-14.31-32-32V205.3L174.6 254.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l103.1-103.1C241.3 97.4 251.1 96 256 96c4.881 0 14.65 1.391 22.65 9.398l103.1 103.1C395.1 221.9 395.1 242.1 382.6 254.6z"></path></svg>
+    </button>
     
-    <!--Header-->
-        <header>
-            <img src="brave/bravelogo.png" alt="BRAVE" style="width: 82px;">
-            <h1>BRAVE</h1>
-        </header>
-    <main>
-        <div id="top-panel">
-            <div class="container">
-                <p>
-                    Bienvenidos a 
-                    <b>BRAVE</b>
-                </p>
+<!--Header and Navbar-->
+    <header>
+        <div class="header">
+            <div class="inner_header">
+                <nav class="navbar">
+                    <ul>
+                        <div class="logo_container">
+                            <img src="../assets/bravelogoedit.png" alt="logo" id="logo">
+                            <h1>BRAVE</h1>
+                            <li class="navbar-logo">DemiCode</li>
+                        </div>
+                        <li class="navbar-toggle"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                              </svg>
+                        </li>
+                        <li class="navbar-links"><a href="#index">Home</a></li>
+                        <li class="navbar-links"><a href="#about">About</a></li>
+                        <li class="navbar-links"><a href="#listenme">ListenMe</a></li>
+                        <li class="navbar-links"><a href="#contactus">Contact & API</a></li>
+            
+                    </ul>
+                </nav>
             </div>
-                
         </div>
-        <div id="bottom-panel">
-            <div class="container">
-                <div class="card" style="right: 250px;"></div>
-                <div class="card" style="left: 250px"></div>
-                <div class="card"></div>
+    </header>
+<!--End Header and Navbar-->
+<!--Carousel-->
+    <div class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/carousel1dark.png" alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 class="carouselr">Bienvenidos a Brave</h4>
+                    <p class="carouselr">Creamos la empresa BRAVE, un nombre creado a partir de las iniciales de nuestros nombres, así como nuestra visión y misión de ser valientes para inspirar a los jóvenes a combatir la depresión y la ansiedad.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/carousel2dark.png" alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Nuestra Misión</h4>
+                    <p>Como empresa es crear soluciones tecnológicas innovadoras para prevenir la depresión y la ansiedad en adolescentes.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/carousel3dark.png" alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Nuestra Visión</h4>
+                    <p>Como empresa es crear herramientas y productos virtuales que permitan a los jóvenes de todo el mundo tener una salud mental estable y romper barreras y prejuicios establecidos por la sociedad.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/carousellmdark.png" alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 class="carousellm">Primer Producto</h4>
+                    <p class="carousellm">Hemos preguntado a los jóvenes directamente sobre sus necesidades y preocupaciones con respecto a su salud mental y hemos hablado con profesionales....</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--End Carousel-->
+<!--Main content-->
+    <div>
+        <main>
+            <!-- Top Panel and Cards -->
+            <div id="top-panel">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="icon"></a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-app-indicator" viewBox="0 0 16 16">
+                                    <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
+                                    <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                </svg>
+                            </a>
+                            <h5 class="h5">Nuestro Primer Producto</h5>
+                        </div>
+                            <div class="card-body">
+                                <p class="p">Nuestro primer producto es ListenMe. Es una aplicación móvil que creamos, que es una plataforma de creación e intercambio de videos motivacionales personalizados que funciona como una red de apoyo confiable.</p>
+                                <p class="p2">
+                                    <a href="../views/listenme.html" class="button">Lee más</a>
+                                </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+                            </svg>
+                            <h5 class="h5">Nuestra Empresa</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="p">Somos una empresa social que tiene como objetivo prevenir la depresión y la ansiedad en jóvenes y adolescentes mediante la creación de aplicaciones.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+                            </svg>
+                            <h5 class="h5">Nuestro Equipo</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="p">¡Somos un equipo emocionado por solucionar problemas con la tecnología! Dentro de nuestro equipo mantenemos un status quo igualitario y equitativo</p>
+                            <p class="p2">
+                                <a href="#team" class="button">Lee más</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <!-- End Top Panel and Cards -->
+            <!-- Bottom Panel and Content-->
+            <div id="bottom-panel">
+                <div class="container">
+                    <div class="containerd">
+                        <a name="about" id="about"></a>
+                        <hr class="featurette-divider">
+                        <div class="row featurette">
+                            <div class="column">
+                                <h3 style="text-align: right; padding-right: 10px;" >¿Quienes somos?</h3>
+                                <p class="text">Creamos la empresa BRAVE, un nombre creado a partir de las iniciales de nuestros nombres, así como nuestra visión y misión de ser valientes para inspirar a los jóvenes a combatir la depresión y la ansiedad. 
+                                    A través de nuestra empresa buscamos crear una red de apoyo comunitario en la que los jóvenes con depresión y ansiedad encuentren consuelo y apoyo, así como las personas que los rodean, puedan sentir que apoyan un poco más a su ser querido; mientras que en el futuro, poco a poco nuestra organización podría ayudar a nuestra comunidad a erradicar el tabú y el estigma de la enfermedad mental y su correcto tratamiento.</p>
+                            </div>
+                            <div class="secondcolumn">
+                                <img src="../assets/bravelogo.png" alt="BRAVE" class="my-image">
+                            </div> 
+                            
+                        </div>
+                        <a name="listenme" id="listenme"></a>
+                        <hr class="featurette-divider">
+                        <div class="row featurette">
+                            <div class="secondcolumn">
+                                <img src="../assets/listenmeedit.png" alt="app_listenme" class="my-image">
+                            </div>
+                            <div class="column">
+                                <h3 style="text-align: left; padding-left: 10px;">ListenMe</h3>
+                                <p class="othertext">Creamos la aplicación ListenMe, que es una plataforma que conecta a varias personas a través de videos en los que los usuarios pueden compartir experiencias y situaciones vulnerables relacionadas con su estado de ánimo, así como crear videos positivos y motivadores; todo ello con el objetivo de fomentar el apoyo mutuo y la patología y eliminar el estigma relacionado con la salud mental y pedir ayuda.</p>
+                                <a href="../views/listenme.html" class="button">Conoce más de la app!</a>
+                            </div>
+                        </div>
+                        <a name="team" id="team"></a>
+                        <hr class="featurette-divider">
+                        <div class="row featurette">
+                            <div class="column">
+                                <h3 style="text-align: right; padding-right: 10px;">DemiCode team</h3>
+                                <p class="text">Somos el equipo DemiCode, formado por: Enys Ordaz, Valentina Osorio, Briana García y Beatriz Rosado, somos de 3 ciudades diferentes:
+                                    Mérida, Yucatán; San Francisco de Campeche, Campeche y Cd. Carmen, Campeche.
+                                    Creamos la empresa BRAVE, un nombre creado a partir de las iniciales de nuestros nombres, así como nuestra visión y misión de ser valientes para inspirar a los jóvenes a combatir la depresión y la ansiedad.</p>
+                                </div>
+                            <div class="secondcolumn">
+                                <img src="../assets/demicodeteam.png" alt="DemiCode" class="my-image">
+                            </div>
+                        </div>
 
+                        <!-- Contact & Social Media -->
+                        <a name="contactus" id="contactus"></a>
+                        <hr class="featurette-divider">
+                        <div class="containerex">
+                            <div class="box">
+                                <a class="button_sm" href="https://www.instagram.com/brave.demicode/" target="blank_">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                      </svg>
+                                      Instagram
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a class="button_sm" href="https://www.facebook.com/brave.demicode" target="blank_">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                    </svg>
+                                    Facebook
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a class="button_sm" href="../views/example.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                      </svg>
+                                      Ejemplo API
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a class="button_sm" href="https://www.pinterest.com.mx/technovationwwcode7/_saved/?fbclid=IwAR3wX12rw9qTGMNbI3PNJejsgpwIcYg4zQ84EqLeLI92XRNgQ9EB6H3cXAU" target="blank_">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                                        <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+                                      </svg>
+                                      Pinterest
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a class="button_sm" href="https://www.youtube.com/channel/UC_PUpTLX3HMfZDgR9PUTSfg" target="blank_">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                                      </svg>
+                                      YouTube
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a class="button_sm" href="https://www.youtube.com/watch?v=Eb2geQxLEEU" target="blank_">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+                                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+                                      </svg>
+                                      Evento Nacional/Regional
+                                </a>
+                            </div>
+                        </div>
+                        <!-- En Contact & Social Media section-->
+                    </div>
+                </div>
+            </div>
+            <!-- End Bottom Panel -->
+                </section>
             </div>
         </div>
-        
-    </main>
-    <img src="assets/logoempresa.png" alt="">
+        </main>
+    </div>
+
+    <!-- Script for the structure & more -->
+    <script src="scripts/brave.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- End Scripts -->
 </body>
-
-<section style="border-style: solid;">
-    <img src="brave/logoempresa.png" alt="logo" style="width: 90px;">
-    <span>¿Quienes somos?</span>
-    <p>Creamos la empresa BRAVE, un nombre creado a partir de las iniciales de nuestros nombres, así como nuestra visión y misión de ser valientes para inspirar a los jóvenes a combatir la depresión y la ansiedad.</p>
-</section>
-<section style="border-style: solid;">
-    <img src="brave/ListenMe.png" alt="app_logo" style="width: 90px">
-    <span>ListenMe</span>
-    <p>Creamos la aplicación ListenMe, que es una plataforma que conecta a varias personas a través de videos en los que los usuarios pueden compartir experiencias y situaciones vulnerables relacionadas con su estado de ánimo, así como crear videos positivos y motivadores; todo ello con el objetivo de fomentar el apoyo mutuo y la patología y eliminar el estigma relacionado con la salud mental y pedir ayuda.</p>
-</section>
-<section style="border-style: solid;">
-    <img src="brave/demicodeteam.png" alt="DemiCode" style="width: 90px;">
-    <span>Get to know our team DemiCode</span>
-    <p> Somos el equipo DemiCode, formado por: Enys Ordaz, Valentina Osorio, Briana García y Beatriz Rosado, somos de 3 ciudades diferentes:
-        Mérida, Yucatán; San Francisco de Campeche, Campeche y Cd. Carmen, Campeche.
-        Creamos la empresa BRAVE, un nombre creado a partir de las iniciales de nuestros nombres, así como nuestra visión y misión de ser valientes para inspirar a los jóvenes a combatir la depresión y la ansiedad.</p>
-</section>
-
-
 </html>
